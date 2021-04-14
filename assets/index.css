@@ -37,6 +37,7 @@ a:visited a:active {
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: auto;
+    width: 100%;
 }
 .nameplate {
     display: inline-block;
@@ -45,10 +46,13 @@ a:visited a:active {
     border-color: #e6d9e6;
     border-right: 0.25em;
     border-right-style: double;
-    width: 25%;
     text-align: right;
     padding-right: 2em;
     min-width: fit-content;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 .links {
     text-shadow: 0.01em 0.01em 0.25em #3f3f3f, 0.01em 0.01em 0.28em #3f3f3f;
@@ -57,8 +61,11 @@ a:visited a:active {
     text-align: left;
     vertical-align: middle;
     height: fit-content;
-    width: 25%;
     min-width: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
 }
 table {
     margin-left: 1.5em;
