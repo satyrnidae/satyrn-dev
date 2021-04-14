@@ -50,7 +50,7 @@ a:visited a:active {
     padding-right: 2em;
     min-width: fit-content;
     position: absolute;
-    right: 50%;
+    right: 47.5%;
     top: 50%;
     transform: translate(0%, -50%);
 }
@@ -63,7 +63,7 @@ a:visited a:active {
     height: fit-content;
     min-width: fit-content;
     position: absolute;
-    left: 50%;
+    left: 52.5%;
     top: 50%;
     transform: translate(0%, -50%);
 }
