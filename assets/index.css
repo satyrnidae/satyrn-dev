@@ -37,7 +37,6 @@ a:visited a:active {
     left: 50%;
     transform: translate(-50%, -50%);
     bottom: auto;
-    width: fit-content;
 }
 .nameplate {
     display: inline-block;
@@ -46,7 +45,7 @@ a:visited a:active {
     border-color: #e6d9e6;
     border-right: 0.25em;
     border-right-style: double;
-    padding-right: 3em;
+    width: 25%;
 }
 .links {
     text-shadow: 0.01em 0.01em 0.25em #3f3f3f, 0.01em 0.01em 0.28em #3f3f3f;
@@ -55,6 +54,7 @@ a:visited a:active {
     text-align: left;
     vertical-align: middle;
     height: fit-content;
+    width: 25%;
 }
 table {
     margin-left: 1.5em;
