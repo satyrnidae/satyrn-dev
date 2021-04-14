@@ -18,7 +18,7 @@ body {
     color: #e6d9e6;
 
     font-family: sans-serif;
-    font-size: 3.25em;
+    font-size: 5vw;
     text-align: center;
 }
 .content {
@@ -30,13 +30,7 @@ body {
     height: fit-content;
 }
 .nameplate {
-    position: relative;
-    top: 0px;
-    right: 50%;
-    transform: translate(50%, 0%);
-
     display: block;
-    min-width: 100%;
     height: fit-content;
 }
 .links {
@@ -55,8 +49,7 @@ body {
 
 /* Text */
 h1 {
-    font-size: 2em;
-    text-decoration: underline;
+    font-size: 2.25em;
     transition: color .25s, text-shadow .25s;
     transition-timing-function: ease;
 }
@@ -95,7 +88,7 @@ a:hover {
 @media screen and (orientation: landscape) and (min-width: 40em) {
     /* Layout */
     body {
-        font-size: 1.25em;
+        font-size: 2vw;
     }
     .content {
         position: relative;
@@ -103,27 +96,21 @@ a:hover {
         left: 50%;
         transform: translate(-50%, -50%);
 
-        width: 100%;
+        width: fit-content;
     }
     .nameplate {
-        position: absolute;
-        right: 45%;
-        top: 50%;
-        transform: translate(0%, -50%);
-
         display: inline-block;
-        min-width: fit-content;
-        padding-right: 2em;
+        padding-right: 1.25em;
         vertical-align: middle;
+
+        text-align: right;
 
         border-color: #e6e6e6;
         border-right: 0.25em double;
     }
     .links {
-        position: absolute;
-        left: 55%;
-        top: 50%;
-        transform: translate(0%, -50%);
+        left: 0%;
+        transform: translate(0%, 0%);
 
         display: inline-block;
         vertical-align: middle;
@@ -133,8 +120,7 @@ a:hover {
 
     /* Text */
     h1 {
-        font-size: 3.25em;
-        text-decoration: none;
+        border-bottom: none;
     }
     h1:hover {
         color: #d88ed8;
