@@ -107,7 +107,7 @@ a:hover {
     }
     .nameplate {
         position: absolute;
-        right: 38.25%;
+        right: 45%;
         top: 50%;
         transform: translate(0%, -50%);
 
@@ -121,7 +121,7 @@ a:hover {
     }
     .links {
         position: absolute;
-        left: 61.75%;
+        left: 55%;
         top: 50%;
         transform: translate(0%, -50%);
 
