@@ -1,0 +1,187 @@
+body {
+  background-image: url("centurion.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #36324f;
+  background-position: center;
+  color: #ffffff;
+  overflow: hidden;
+  user-select: none !important;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  vertical-align: center;
+  font-family: sans-serif;
+}
+.bingo {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+  color: #36324f;
+  text-shadow: #ff375e 0.5vw 0.5vw;
+  font-size: 20vw;
+  z-index: 10;
+  width: 100%;
+  transition: text-shadow cubic-bezier(.45,.05,.55,.95) 2s;
+  font-family: serif;
+  font-kerning: unset;
+  font-stretch: ultra-expanded;
+  font-size-adjust: initial;
+}
+.shine {
+  top: -8000px;
+  z-index: 20;
+  background-color: #ffeeff;
+  position: absolute;
+}
+.tombstone {
+  position: absolute;
+  z-index: 30;
+}
+.overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  user-select: none !important;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 40;
+}
+.menu {
+  position: relative;
+  margin-left: auto;
+  top: 15px;
+  right: 15px;
+  float: right;
+  display: block;
+  z-index: 50;
+}
+button {
+  display: block;
+  font-family: sans-serif;
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+.menuButton {
+  background-image: url('ui/menubutton.png');
+  top: 10px;
+}
+.menuButton:hover {
+  background-image: url('ui/menubutton.hover.png');
+}
+.menuButton:active {
+  background-image: url('ui/menubutton.activate.png');
+}
+.settingsButton {
+  background-image: url('ui/settingsbutton.png');
+  top: 10px;
+}
+.settingsButton:hover {
+  background-image: url('ui/settingsbutton.hover.png');
+}
+.settingsButton:active {
+  background-image: url('ui/settingsbutton.activate.png');
+}
+.window {
+  position: fixed;
+  display: block;
+  max-width: 50%;
+  max-height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(23,23,23,0.75);
+  border-radius: 45px;
+  z-index: 60;
+}
+.windowContents {
+  margin: 22.5px 22.5px 22.5px 22.5px;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  height: inerit;
+  overflow: auto;
+  max-height: inherit;
+}
+.subscroll {
+  overflow-y: scroll;
+  max-height: 300px;
+}
+.exitButton {
+  position: relative;
+  display: block;
+  float: right;
+  margin-right: 22.5px;
+  margin-top: 22.5px;
+  background-image: url('ui/exitbutton.png');
+}
+.exitButton:hover {
+  background-image: url('ui/exitbutton.hover.png');
+}
+.exitButton:active {
+  background-image: url('ui/exitbutton.activate.png');
+}
+a {
+  text-decoration: underline;
+  color: white;
+}
+a:active {
+  color: gray;
+}
+a:hover {
+  color: #ff375e
+}
+a.visited {
+  color: gray;
+}
+td {
+  text-align: left;
+}
+.tlabel {
+  text-align: right;
+}
+input[type='number'] {
+  text-align: right;
+  background-color: white;
+}
+input[type='button'] {
+  min-width: 100px;
+  min-height: 28px;
+}
+input:invalid {
+  background-color: #ff375e;
+}
+.tinput {
+  width: 100%;
+}
+.treadout {
+  text-align: left;
+  padding-left: 10px;
+  width: 1em;
+}
+section {
+  display: table;
+  text-align: left;
+}
+section div {
+  display: table-row;
+}
+section div div {
+  box-sizing: border-box;
+  display: table-cell;
+  padding: 1px;
+}

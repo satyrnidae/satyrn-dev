@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    font-family: Arial;
+}
+.background {
+    position:absolute;
+    background-image: url("lostwoods.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -90000;
+    height:100%;
+    width:100%;
+}
+.jswarn {
+    font-weight: bold;
+    font-size: 48pt;
+}
+.centerItems {
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	overflow:hidden;
+}
+audio#lostwoods {
+    z-index:80000;
+    position:fixed;
+    bottom:0;
+    left:0;
+    opacity: 50%;
+}
+audio#lostwoods:hover {
+    opacity:100%;
+}
+.overlay {
+    z-index: 20000;
+    -moz-border-radius:10px;  /* for Firefox */
+    -webkit-border-radius:10px; /* for Webkit-Browsers */
+    border-radius:10px; /* regular */
+    opacity:0.5; /* Transparent Background 50% */
+    background-color: #000000;
+    height: 50%;
+    width: 66.667%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.notice .text {
+    z-index: 40000;
+    color: #FFFFFF;
+    height: 75%;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.notice .text div {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    top: 25%;
+}
+.copyright {
+    color: white;
+    font-size: 9pt;
+    right: 0px;
+    bottom: 0px;
+    position:absolute;
+    text-align: right;
+}
+.copyright a {
+    color: white;
+}
+.copyright a:hover {
+    color: white;
+}
+.copyright a :active {
+    color: white;
+}
+.copyright a:visited {
+    color: white;
+}
+.dancer {
+	position: absolute
+}

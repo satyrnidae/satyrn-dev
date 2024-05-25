@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!--
+    Hey there!
+
+    Loop: Lost Woods from Ocarina of Time
+        Arranged by Koji Kondo
+        MIDI sequenced by John Kuzma
+    Image: http://rowtendo.tumblr.com/post/20993086352/i-made-a-thing
+    Script based off of the random snippets found on this website: http://actualbones.com
+        Author: Conor (@pizzatrash)
+    Special thanks to The Whippinpost for their BPM calculator:
+        http://www.thewhippinpost.co.uk/tools/delay-time-calculator.htm
+-->
+    <head>
+        <title>You've met with a terrible fate, haven't you?</title>
+        <meta charset="utf-8"/>
+        <meta name="Author" content="Bridger Maskrey"/>
+        <link rel="stylesheet" type="text/css" href="../assets/hurdygurdy/terriblefate.css"/>
+        <link rel="stylesheet" type="text/css" href="../assets/common/satyrn.css"/>
+		<script src="../assets/lib/jquery-3.2.1.min.js"></script>
+        <script src="../assets/hurdygurdy/terriblefate.js"></script>
+    </head>
+    <body onLoad="main();" class="centerItems">
+        <div class="window top-most">
+            <div class="window-contents">
+                <h1>HTTP 500: Internal Server Error</h1>
+                <hr/>
+                <h2>You've met with a terrible fate, haven't you?</h2>
+                <p>Something unexpected happened while trying to access this resource.</p>
+                <span class="spaced-link"><a href="javascript:history.back()">Go Back</a></span>
+            </div>
+        </div>
+        <noscript>
+            <img src="../assets/hurdygurdy/rowtendo.gif" alt="DANCE THE NIGHT AWAY~"/><br>
+            <div class="jswarn">DANCING LINK JUDGES YOU FOR DISABLING JAVASCRIPT</div>
+        </noscript>
+        <div class="background"></div>
+        <audio autoplay loop id="lostwoods" src="../assets/hurdygurdy/lost.mp3" type="audio/mpeg" controls style="z-index:80000;position:fixed;bottom:0;left:0;" volume="0.5">
+            <div class="jswarn">Your browser does not appear to support audio tags.  This is unfortunate.</div>
+        </audio>
+        <div class="copyright">
+            Dancing link by <a href="http://rowtendo.tumblr.com/post/20993086352/i-made-a-thing">Rowtendo</a>.<br>
+            "Lost Woods" by Koji Kondo; sequenced by John Kuzma.<br>
+            Background from The Legend of Zelda, Majora's Mask (c) Nintendo.
+        </div>
+    </body>
+</html>

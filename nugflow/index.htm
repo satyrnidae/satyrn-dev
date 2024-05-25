@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html aria-label="Click anywhere to spawn a tombstone">
+
+<head>
+	<link rel="stylesheet" href="res/normalize.css" />
+	<link rel="stylesheet" href="res/nugflow.css" />
+	<script lang="javascript" src="bin/nugflow.js"></script>
+	<meta charset="utf-8" />
+	<title>ｎｕｇｆｌｏｗ．ｉｎｆｏ</title>
+</head>
+
+<body onload="main(); bindSettings()">
+	<h1 class='bingo' id='bingo'>B I N G O</h1>
+	<div class='overlay' id='overlay'></div>
+	<div class='menu' id='menu'>
+		<button tabindex="1" aria-label="Credits" class='menuButton' onclick='showMenu("creditsMenu")'></button>
+		<button tabindex="2" aria-label="Settings" class='settingsButton' onclick='bindSettings(); showMenu("settingsMenu");'></button>
+	</div>
+	<div class='window' id='creditsMenu' style='visibility: hidden;'>
+		<button aria-label="Exit" class='exitButton' onclick='hideMenu("creditsMenu")' id='hideButton'></button>
+		<div class='windowContents'>
+			<h2>Credits</h2>
+			<p>Special thanks to the fine people of the Wolfgun discord server.</p>
+			<div class="subscroll">
+			<section>
+				<div>
+					<div><a href='https://github.com/centurionfox/nugflow-info'>Site and
+							Code</a></div>
+					<div>satyrnidae</div>
+					<div><a href='https://centurionfox.net'>https://satyrn.dev</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/bingo.mp3'>Bingo Sound Effect #1</a></div>
+					<div>satyrnidae</div>
+				</div>
+				<div>
+					<div><a href='res/kara.mp3'>Bingo Sound Effect #2</a></div>
+					<div>Kara</div>
+				</div>
+				<div>
+					<div><a href='res/centurion.png'>Background image</a></div>
+					<div>Kara</div>
+				</div>
+				<div>
+					<div><a href='res/oof.mp3'>Oof Sound Effect #1</a></div>
+					<div>Mojang / C418, <i>Minecraft</i></div>
+					<div><a href='https://minecraft.net'>https://minecraft.net</a></div>
+				</div>
+				<div>
+					<div><a href='res/oof2.mp3'>Oof Sound Effect #2</a></div>
+					<div>Shiny Entertainment, Joey Kuras</div>
+					<div><a href='https://www.youtube.com/watch?v=0twDETh6QaI'>A very relevant 30 minute video</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/tombstone.png'>Basic Tombstone</a>
+					</div>
+					<div>Landon Podbielski/Adult Swim Games, *Duck Game*</div>
+					<div><a
+							href='https://store.steampowered.com/app/312530/Duck_Game/'>https://store.steampowered.com/app/312530/Duck_Game/</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/buffstone.png'>Buff Tombstone</a></div>
+					<div>half/moon</div>
+					<div><a href='https://halfmoonplanet.bandcamp.com/'>https://halfslashmoon.bandcamp.com/</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/blankstone.png'>Blank Tombstone</a>
+					</div>
+					<div>see</div>
+					<div><a href='https://seebeyond.space'>https://seebeyond.space</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/seestone.png'>Shortened Tombstone
+							#1</a></div>
+					<div>see</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/seestone1.png'>Shortened Tombstone
+							#2</a></div>
+					<div>see</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/seestone2.png'>Shortened Tombstone
+							#3</a></div>
+					<div>see</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/seestone3.png'>Shortened Tombstone
+							#4</a></div>
+					<div>see</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/seestone4.png'>Shortened Tombstone
+							#5</a></div>
+					<div>see</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/shortstone.png'>Shortened Tombstone
+							#6</a></div>
+					<div>see</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/googlestone.png'>Googly Eye
+							Tombstone</a></div>
+					<div>Khamelot</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/sideeyestone.png'>Side-Eye
+							Tombstone</a></div>
+					<div>Khamelot</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/eyestone.png'>Wide-Eye Tombstone</a>
+					</div>
+					<div>Khamelot</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/heartstone.png'>Heart Tombstone</a>
+					</div>
+					<div>satyrnidae</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/transstone.png'>Trans Pride
+							Tombstone</a></div>
+					<div>satyrnidae</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/tombstowone.png'>TombstOwOne</a></div>
+					<div>GHOST</div>
+					<div><a href='https://twitter.com/heli0ns'>https://twitter.com/heli0ns</a></div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/pridestone.png'>Rainbow / Pride Tombstone</a></div>
+					<div>GHOST</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/oofstone.png'>OOF Stone</a></div>
+					<div>GHOST</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/notfinestone.png'>Not Fine Stone</a>
+					</div>
+					<div>kc greene, edit by GHOST</div>
+					<div><a href='https://kcgreendotcom.com/index.html'>https://kcgreendotcom.com/index.html</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/wolfstone.png'>Wolfgun Logo Stone
+							#1</a></div>
+					<div>Yrrzy</div>
+					<div><a href='http://yrrzy.tumblr.com/'>http://yrrzy.tumblr.com/</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/oldwolfstone.png'>Wolfgun Logo Stone
+							#2</a></div>
+					<div>Connie</div>
+					<div><a href='https://twitter.com/connieBarkshark'>https://twitter.com/connieBarkshark</a>
+					</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/thinkstone.png'>Thinking Tombstone</a>
+					</div>
+					<div>Whisper</div>
+					<div><a href='https://twitter.com/catloaf'>https://twitter.com/catloaf</a></div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/bstone.png'>B Tombstone</a></div>
+					<div>Flowers</div>
+					<div><a href='https://twitter.com/radioflower'>https://twitter.com/radioflower</a></div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/istone.png'>I Tombstone</a></div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/nstone.png'>N Tombstone</a></div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/gstone.png'>G Tombstone</a></div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/ostone.png'>O Tombstone</a></div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/ohnostone.png'>Ö Tombstone</a></div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/flowerstone.png'>Flowers Tombstone</a>
+					</div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/bingoboxstone.png'>Bingo Box
+							Tombstone</a></div>
+					<div>Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/ghoststone.png'>GHOST Tombstone</a>
+					</div>
+					<div>GHOST, edit by Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/karastone.png'>Kara Tombstone</a>
+					</div>
+					<div>GHOST, edit by Flowers</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/weirdseedstone.png'>Kiwi Tombstone</a>
+					</div>
+					<div>chunji/kiwi, edit by Flowers</div>
+					<div><a href='https://twitter.com/chunjihuli'>https://twitter.com/chunjihuli</a></div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/moiststone.png'>K/DEN Tombstone</a>
+					</div>
+					<div>K/DEN, edit by Flowers</div>
+					<div><a href='https://kden.bandcamp.com'>https://kden.bandcamp.com</a></div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/fancybingo.png'>Bingo Fancy</a></div>
+					<div>Lucy Poindexter</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/bingo.png'>Bingo Flannel</a></div>
+					<div>Flannel</div>
+				</div>
+				<div>
+					<div><a href='res/tombstones/frankerfacestone.png'>Frankerfacez
+							Tombstone</a></div>
+					<div></div>
+					<div><a
+							href='https://cdn.frankerfacez.com/emoticon/308378/4'>https://cdn.frankerfacez.com/emoticon/308378/4</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		</div>
+	</div>
+	<div class='window' id='settingsMenu' style="visibility: hidden;">
+		<button aria-label="Exit" class='exitButton' onclick='hideMenu("settingsMenu")' id='hideButton'></button>
+		<div class='windowContents'>
+			<h2>Settings</h2>
+			<p>Adjust global simulation settings. More to come (possibly).</p>
+			<form onshow="">
+				<section style="display: table">
+					<div>
+						<div class='tlabel'>Initial Tombstone Speed:</div>
+						<div><input aria-label="Initial Tombstone Speed" class='tinput' type="number" min="1" max="1000" id="initialTombstoneSpeed"></div>
+					</div>
+					<div>
+						<div class='tlabel'>Tombstone Max Age:</div>
+						<div><input aria-label="Tombstone Maximum Age in Milliseconds" class='tinput' type="number" min="600" max="15000" id="tombstoneMaxAge"></div>
+					</div>
+					<div>
+						<div class='tlabel'>Audio Volume:</div>
+						<div><input aria-label="Audio Volume (Percentage)" class='tinput' type="range" min="0" max="1" step="0.01" id="audioVolume"
+								oninput="rebindViewModel('audioVolume')" view='audioVolumeReadout'>
+						</div>
+						<div class='treadout'><span id="audioVolumeReadout">0.00</span>
+						</div>
+					</div>
+					<div>
+						<div class='tlabel'><span style='font-family: serif;'>B I N G
+								O</span> Shadow Offset:</div>
+						<div><input aria-label="BINGO Title Shadow Offset" class='tinput' type="range" min="0.05" max="2.5" step="0.05" id="shadowOffset"
+								oninput="rebindViewModel('shadowOffset')" view='shadowOffsetReadout'></div>
+						<div class='treadout'><span id="shadowOffsetReadout">0.00</span>
+						</div>
+					</div>
+					<div>
+						<div class='tlabel'>Tombstone Rubberiness Multiplier:</div>
+						<div><input aria-label="Tombstone Rubberiness Modifier" class='tinput' type="range" min="1" max="3" step="0.5" id="rubberMult"
+								oninput="rebindViewModel('rubberMult')" view='rubberMultReadout'></div>
+						<div class='treadout'><span id="rubberMultReadout">0.00</span></div>
+					</div>
+					<div>
+						<div class='tlabel'>Automatic Spawn Rate:</div>
+						<div><input aria-label="Automatic Spawn Rate" class='tinput' type="range" min="0" max="256" step="1" id="autoSpawnRate"
+								oninput="rebindViewModel('autoSpawnRate')" view='autoSpawnRateReadout'></div>
+						<div class='treadout'><span id="autoSpawnRateReadout">0.00</span>
+						</div>
+					</div>
+				</section><br />
+				<input type="button" value="Reset" onclick="resetSettings()" />
+				<input type="button" value="Apply" onclick="applySettings()" />
+				<input type="button" value="OK" onclick="applySettings(); hideMenu('settingsMenu')" />
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

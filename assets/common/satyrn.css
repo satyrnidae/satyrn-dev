@@ -1,0 +1,24 @@
+.window {
+  position: fixed;
+  display: block;
+  max-width: 50%;
+  max-height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(23,23,23,0.75);
+  border-radius: 45px;
+}
+.window-contents {
+  margin: 22.5px 22.5px 22.5px 22.5px;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  height: inherit;
+  overflow: auto;
+  max-height: inherit;
+  color: white;
+}
+.top-most {
+  z-index: 9000;
+}

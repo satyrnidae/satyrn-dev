@@ -1,0 +1,7 @@
+# Activates the directory listing for this path
+Options +Indexes
+
+# Reset ErrorDocument
+ErrorDocument 500 https://satyrn.dev/error/500.html
+ErrorDocument 401 https://satyrn.dev/error/401.html
+ErrorDocument 404 https://satyrn.dev/error/404.html

@@ -34,17 +34,23 @@ body {
     height: fit-content;
 }
 .links {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0%);
-
-    display: block;
+    display: inline-block;
     width: fit-content;
     height: fit-content;
 
-    font-size: 1.25em;
+    font-size: 6vw;
     line-height: 2em;
     text-align: left;
+    vertical-align: middle;
+}
+
+.links ul li::before {
+    content: "› ";
+    text-align: right
+}
+
+div#site-links ul li {
+    margin-bottom: 0.25em;
 }
 
 /* Text */
@@ -56,7 +62,13 @@ h1 {
 
 ul {
     list-style-type: none;
+    padding-left: 0em;
 }
+
+li {
+    text-transform: lowercase;
+}
+
 a {
     color: #e6d9e6;
 
@@ -69,7 +81,12 @@ a {
 a:hover {
     color: #d88ed8;
 
-    text-decoration: underline;
+    text-shadow: 0.01em 0.01em 0.25em #3f3f3f, 0.01em 0.01em 0.28em #3f3f3f;
+}
+
+h1:hover {
+    color: #d88ed8;
+
     text-shadow: 0.01em 0.01em 0.25em #3f3f3f, 0.01em 0.01em 0.28em #3f3f3f;
 }
 
@@ -78,8 +95,19 @@ a:hover {
     width: 1em;
     height: 1em;
     margin-right: 0.625em;
+    padding-bottom: 0.125em;
 
     vertical-align: middle;
+}
+
+.hidden-link {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 1vw;
+    color: #0c0c0c;
+    margin-left: 2px;
+    font-family: monospace
 }
 
 /*
@@ -99,31 +127,81 @@ a:hover {
         width: fit-content;
     }
     .nameplate {
+        display: block;
+        text-align: center;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    div#site-links {
+        position: relative;
         display: inline-block;
-        padding-right: 1.25em;
+        margin-left: 1em;
+        width: fit-content;
+        height: fit-content;
         vertical-align: middle;
-
-        text-align: right;
-
-        border-color: #e6e6e6;
-        border-right: 0.25em double;
+    }
+    div#site-links ul {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    div#site-links ul li {
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 0.15em;
+        margin-top: 0.15em;
+    }
+    div#site-links ul li:first-child {
+        margin-top: 0em;
+    }
+    div#site-links ul li:last-child {
+        margin-bottom: 0em;
+    }
+    div#site-links ul li::before {
+        content: "› ";
+        text-align: left;
+    }
+    h1 {
+        font-size: 3.25em;
     }
     .links {
-        left: 0%;
-        transform: translate(0%, 0%);
-
+        position: relative;
+        height: fit-content;
+        font-size: 3vw;
+    }
+    .links ul {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .links ul li {
         display: inline-block;
-        vertical-align: middle;
-
-        font-size: 1em;
+        font-size: 0.7em;
+    }
+    .links ul li::before {
+        content: ""
+    }
+    .links ul li::after {
+        font-size: 1.25em;
+        padding-left: 0.1em;
+        padding-right: 0.1em;
+        content: '|'
+    }
+    .links ul li:first-child::after {
+        padding-left: 0em
+    }
+    .links ul li:last-child::after {
+        padding-right: 0em;
+        content: ''
     }
 
     /* Text */
     h1 {
+        display: inline-block;
         border-bottom: none;
-    }
-    h1:hover {
-        color: #d88ed8;
-        text-shadow: 0.005em 0.005em 0.0625em #3f3f3f, 0.005em 0.005em 0.07em #3f3f3f;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        vertical-align: middle;
     }
 }
